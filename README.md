@@ -6,4 +6,4 @@ git clone https://github.com/MoisesLN/TSAL.git
 cd TSAL
 python -m http.server
 ```
-After that, acess (http://localhost:8000/)[http://localhost:8000/] on your browser! This runs a local server (similar to VS Code's extension Live Server).
+After that, acess [http://localhost:8000/](http://localhost:8000/) on your browser! This runs a local server (similar to VS Code's extension Live Server).
