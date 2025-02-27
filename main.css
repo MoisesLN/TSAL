@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    transition: 0.2s ease;
+}
+:root{
+    --green1: rgba(209, 250, 229, 1);
+    --green2: rgba(52, 211, 153, 1);
+    --green3: rgba(16, 185, 129, 1);
+    --green4: rgba(5, 150, 105, 1);
+    --green5: rgba(4, 120, 87, 1);
+    --green6: rgba(6, 78, 56, 1);
+    --green_gradient: linear-gradient(to top right, #064e38, #0eb481);
+    --white_green: linear-gradient(to top, #064e38, #ffffff);
+    --dark_gradient: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), #242424);
+    --gray: rgba(114, 110, 110, 1);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    outline: none;
+    border: none;
+}
+header a:hover{
+    scale: 1.1;
+}
+footer a:hover{
+    scale: 1.1
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.efeito{
+    position: relative;
+    transition: 0.2s ease;
+    overflow: hidden;
+}
+.efeito:hover{
+    scale: 1.1;
+}
+.efeito::after{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    width: 10px;
+    height: 150%;
+    rotate: 30deg;
+    transform: translateX(-30px);
+    top: 0;
+    left: 0;
+    transition: 0.2s ease;
+}
+.efeito:hover::after{
+    left: calc(100% + 50px);
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--green4);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--green2);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--green3);
+}

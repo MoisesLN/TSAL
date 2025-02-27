@@ -1,0 +1,86 @@
+body{
+    background-color: var(--green1);
+}
+header{
+    background-color: var(--green5);
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+    font-size: 1.5em;
+    gap: 28px;
+    font-weight: 500;
+}
+header svg{
+    height: 40px;
+}
+main{
+    padding: 40px 80px;
+    display: flex;
+}
+.esquerda{
+    width: 50%;
+}
+.direita{
+    width: 50%;
+}
+.mapa{
+    width: 500px;
+    height: 400px;
+    background-image: url("/perfil/imagens/mapa.png");
+    background-size: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 24px;
+    position: relative;
+}
+.mapa::after{
+    content: '';
+    position: absolute;
+    width: 3.5%;
+    height: 105%;
+    background-color: var(--green6);
+    top: 0;
+    right: 0;
+}
+.mapa::before{
+    content: '';
+    position: absolute;
+    width: 105%;
+    height: 3.5%;
+    background-color: var(--green6);
+    bottom: 0;
+    left: 0;
+}
+.rota{
+    background-color: var(--green5);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    position: relative;
+}
+.rota::before{
+    content:'';
+    position: absolute;
+    width: 102%;
+    height: 110%;
+    transform: translate(5px, 5px);
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: var(--green6);
+    z-index: -1;
+}
+.rota > p{
+    font-size: 2em;
+    font-weight: 600;
+}
+.viagem{
+    display: flex;
+    gap: 24px;
+    font-weight: 400;
+}
+.viagem svg{
+    width: 30px;
+}
