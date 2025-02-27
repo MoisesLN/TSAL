@@ -1,0 +1,69 @@
+*{
+    border: 0px solid red;
+}
+body{
+    overflow: hidden;
+}
+.stars svg{
+    width: 20px;
+    fill: var(--green1);
+}
+.logo svg{
+    width: 60px;
+}
+.direita{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.bigcard{
+    background-color: var(--green6);
+    padding: 20px 60px;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+.bcprofile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.center{
+    gap: 24px;
+    font-size: 1.2em;
+}
+.bigcard a{
+    padding: 12px;
+    background-color: var(--green4);
+    width: 60%;
+    height: 65px;
+    align-self: center;
+    border-radius: 12px;
+}
+
+.efeito{
+    position: relative;
+    transition: 0.2s ease;
+    overflow: hidden;
+}
+.efeito:hover{
+    scale: 1.1;
+}
+.efeito::after{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    width: 10px;
+    height: 150%;
+    rotate: 30deg;
+    transform: translateX(-30px);
+    top: 0;
+    left: 0;
+    transition: 0.2s ease;
+}
+.efeito:hover::after{
+    left: calc(100% + 50px);
+}

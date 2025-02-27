@@ -1,0 +1,143 @@
+*{
+    border: 0px solid red;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    margin: 0px 0;
+    padding: 48px 64px;
+    width: 100%;
+    background-color: var(--green6);
+}
+header *{
+    color: var(--green2);
+
+}
+.logomarca{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+.logo svg{
+    width: 50px;
+    height: 50px;
+    padding: 12.5px;
+}
+.logo{
+    background-color: var(--green3);
+    border-radius: 11000px;
+}
+.searchbar{
+    width: 300px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    background-color: var(--green4);
+    border-radius: 4px;
+}
+.searchbar input{
+    width: 100%;
+}
+.searchbar svg{
+    height: 24px;
+}
+input{
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    color: white;
+    font-weight: 300;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.links a{
+    font-weight: 600;
+    color: var(--green2);
+}
+.perfil svg{
+    width: 50px;
+    height: 50px;
+}
+
+
+main{
+    margin: 64px 0;
+    width: 100%;
+}
+.titulo{
+    font-size: 2.5em;
+    color: var(--green4);
+    text-align: center;
+    margin-bottom: 32px;
+}
+.rota{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 48px;
+    width: 100%;
+    border-bottom: 3px solid rgba(52, 211, 153, 0.2);
+}
+.rota *{
+    color: var(--green3);
+}
+.viagem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px; 
+}
+.solicitar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.solicitar svg{
+    width: 32px;
+}
+.solicitar:hover{
+    scale: 1.1;
+}
+
+
+
+
+
+footer{
+    background-color: var(--green6);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+.brands svg{
+    fill: #fff;
+    width: 25px;
+}
+.brands{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,39 @@
+*{
+    border: 0px solid red;
+}
+.stars svg{
+    width: 15px;
+    fill: var(--green1);
+}
+.card{
+    background-color: var(--green6);
+    display: flex;
+    padding: 12px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo svg{
+    width: 60px;
+}
+.cardesq{
+    display: flex;
+    gap: 12px;
+}
+.cardir{
+    display: flex;
+}
+.cardir img{
+    height: 100px;
+}
+.direita{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.efeito::after{
+    transform:translateX(-100px)
+}
+.efeito:hover::after{
+    left: calc(100% + 150px);
+}

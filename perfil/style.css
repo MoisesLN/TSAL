@@ -1,0 +1,251 @@
+*{
+    border: 0px solid red;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin: 10px auto;
+    width: 90%;
+    color: var(--green5);
+}
+.logomarca{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+.logomarca p{
+    color: var(--green4);
+}
+.logo svg{
+    width: 50px;
+    height: 50px;
+    padding: 12.5px;
+}
+.logo{
+    background-color: var(--green3);
+    border-radius: 11000px;
+}
+.searchbar{
+    width: 300px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    background-color: var(--green4);
+    border-radius: 4px;
+}
+.searchbar input{
+    width: 100%;
+}
+.searchbar svg{
+    height: 24px;
+}
+input{
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    color: white;
+    font-weight: 300;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.links a{
+    font-weight: 600;
+    color: var(--green5);
+}
+.perfil svg{
+    width: 50px;
+    height: 50px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    overflow-y: scroll;
+}
+.profile{
+    background-color: var(--green6);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+    overflow-y: auto;
+}
+.ptitulo{
+    font-size: 2em;
+}
+.cardperfil{
+    background-color: #fff;
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    color: var(--green5);
+    font-size: 1.5em;
+    border-radius: 12px;
+}
+.cardperfil > div{
+    display: flex;
+    flex-direction: column;
+}
+.cardperfil p{
+    color: var(--green5);
+    font-weight: 700;
+}
+.cardperfil svg{
+    fill: var(--green5);
+}
+.stars svg{
+    height: 20px;
+}
+.iconep svg{
+    height: 80px;
+}
+
+.profilecard{
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+}
+.profilecard *{
+    color: var(--green5);
+}
+.cardtitulo{
+    font-weight: 600;
+    border-bottom: 1px solid var(--green6);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.viagem{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.viagem svg{
+    width: 30px;
+}
+
+.avaliacoes{
+    background-color: var(--green2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: scroll;
+}
+.avtitulo{
+    font-size: 2em;
+    color: var(--green6);
+    font-weight: 600;
+}
+.avaliacao{
+    background-color: var(--green6);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 8px;
+
+}
+.avperfil{
+    display: flex;
+    gap: 8px;
+}
+.avperfil .stars svg{
+    fill: white;
+}
+.avimg{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 1000px;
+    background-size: 55px;
+    background-position: center;
+}
+.avdescricao{
+    font-weight: 300;
+}
+#avimg1{
+    background-image: url("./imagens/david.png");
+}
+#avimg2{
+    background-image: url("./imagens/moises.png");
+}
+#avimg3{
+    background-image: url("./imagens/guiga.png");
+}
+#avimg4{
+    background-image: url("./imagens/davil.png");
+}
+#avimg5{
+    background-image: url("./imagens/clara.png");
+}
+
+
+.rotas{
+    background-color: var(--green1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+}
+.rotatitulo{
+    font-size: 2em;
+    color: var(--green4);
+    font-weight: 600;
+}
+.rota{
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--green4);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.rota p{
+    padding-left: 24px;
+}
+.rota img{
+    width: 100%;
+}
+.rotadescricao{
+    text-align: right;
+    padding-right: 24px;
+}
+
+
+footer{
+    background-color: var(--green6);
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.brands svg{
+    fill: #fff;
+    width: 25px;
+}
+.brands{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
