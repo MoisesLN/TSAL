@@ -39,8 +39,9 @@ p{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 65%;
+    width: 60%;
     text-align: center;
+    
 }
 #bvindo{
     font-size: 3em;
